@@ -12,26 +12,43 @@
     transition-timing-function: ease-in;
     z-index: 1;
     background-color: black;
-    padding: 10px; 
-
 }
 .nav_black{
     background-color: rgb(20,20,20);
 }
-.header_container{
+.Header_container{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .header_left ul{
     width: 140%;
     display: flex;
     justify-content: space-between;
     list-style: none;
-  
 } 
+.header_right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    padding-left: 2px;
+    
+}
+li{
+    font-size: 13px;
+}
+.logo{
+   cursor: pointer;
+  font-size: 30px;
+}
+
+.header_right ul li{
+    font-size: 10px;
+}
+    
+
 
 
 

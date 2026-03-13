@@ -1,13 +1,18 @@
 import React from 'react'
 import "./Header.css"
+import NetflixLogo from "../../assets/images/BrandAssets_Logos_01-Wordmark.jpg"
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import SearchIcon from '@mui/icons-material/Search';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 function Header() {
   return (
     <div className='Header_outer_container'>
         <div className='Header_container'>
            <div className='header_left'>
              <ul>
-               {/* <li><img src="path/to/logo.png" alt="Logo" /></li> */}
-                <li>Netflix</li>
+                
+                 <li><img src={NetflixLogo} alt="Logo" width="100px" className='logo'/></li>
                 <li>Home</li>
                 <li>Movies</li>
                 <li>TV Shows</li>
@@ -17,10 +22,10 @@ function Header() {
            </div>
             <div className='header_right'>
                 <ul>
-                  <li>Search</li>
-                  <li>Account</li>
-                  <li>Notifications</li>
-                  <li>ArrowDropDownIcon</li>
+                  <li><SearchIcon /></li>
+                  <li><AccountBoxIcon /></li>
+                  <li><NotificationsNoneIcon /></li>
+                  <li><ArrowDropDownIcon /></li>
                 </ul> 
             </div>
         </div>

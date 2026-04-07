@@ -10,7 +10,7 @@
     align-items: center;
     background-color: rgb(20,20,20);
     background-color:transparent;
-    height: 10vh;
+    height: 10vh; 
     color: white;
     transition:all 0.5s ;
     transition-timing-function: ease-in;
@@ -54,9 +54,4 @@ li{
     font-size: 10px;
 }  
     
-
-
-
-
-
 

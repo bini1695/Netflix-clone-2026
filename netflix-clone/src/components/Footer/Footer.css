@@ -4,10 +4,8 @@
     display: flex;
     justify-content: center;
 }
-
-.footer-inner-container{
+.footer_inner_container{
     width: 60%;
-   
 }
 
 .footer_icons{

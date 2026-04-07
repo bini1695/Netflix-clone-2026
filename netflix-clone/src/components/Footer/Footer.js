@@ -2,13 +2,13 @@ import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import "./Footer.css"
+import "./Footer.css"  
 
 function Footer() {
   return (
   
   <div className='footer_outer_container'>
-    <div className='footer_iner_container'>
+    <div className='footer_inner_container'>
      <div className='footer_icons'>
        <FacebookIcon/>
        <InstagramIcon/>

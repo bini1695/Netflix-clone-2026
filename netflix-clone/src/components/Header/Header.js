@@ -26,7 +26,7 @@ function Header() {
                   <li><AccountBoxIcon /></li>
                   <li><NotificationsNoneIcon /></li>
                   <li><ArrowDropDownIcon /></li>
-                </ul> 
+                </ul>
             </div>
         </div>
     </div>

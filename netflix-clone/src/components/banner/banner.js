@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../../utils/axios';
+import '../banner/banner.css'
 import requests from '../../utils/requests';
+
+
 
 // Add the truncate function
 function truncate(str, n) {
@@ -11,17 +14,25 @@ function Banner() {  // Changed to PascalCase (React convention)
     const [movie, setMovie] = useState({});
     
     useEffect(() => {
+      console.log("Effect triggered"); // Add this
         (async () => {
             try {
+                 
                 const request = await axios.get(requests.fetchNetflixOriginals);
+                    console.log(request);
                 setMovie(request.data.results[
                     Math.floor(Math.random() * request.data.results.length)
                 ]);
+     
             } catch (error) {
                 console.log("error", error);  // Fixed console.log
             }
         })();
     }, []);
+
+    function truncate(str, n){
+      return str?.length > n ? str.substr(0, n-1) + "..." : str;
+    }
 
     return (
         <div 
@@ -47,7 +58,7 @@ function Banner() {  // Changed to PascalCase (React convention)
                     {truncate(movie?.overview, 150)}  {/* Fixed: 'trancate' to 'truncate' */}
                 </h1>
             </div>
-            <div className='banner fadeBottom'/>  {/* Fixed: 'fadeBotton' to 'fadeBottom' */}
+            <div className='banner_fadeBottom'/>  {/* Fixed: 'fadeBotton' to 'fadeBottom' */}
         </div>
     );
 }

@@ -3,8 +3,6 @@ import axios from '../../utils/axios';
 import '../banner/banner.css'
 import requests from '../../utils/requests';
 
-
-
 // Add the truncate function
 function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -14,7 +12,7 @@ function Banner() {  // Changed to PascalCase (React convention)
     const [movie, setMovie] = useState({});
     
     useEffect(() => {
-      console.log("Effect triggered"); // Add this
+      console.log("Effect triggered"); 
         (async () => {
             try {
                  
@@ -33,7 +31,6 @@ function Banner() {  // Changed to PascalCase (React convention)
     function truncate(str, n){
       return str?.length > n ? str.substr(0, n-1) + "..." : str;
     }
-
     return (
         <div 
             className='banner'
@@ -61,6 +58,6 @@ function Banner() {  // Changed to PascalCase (React convention)
             <div className='banner_fadeBottom'/>  {/* Fixed: 'fadeBotton' to 'fadeBottom' */}
         </div>
     );
-}
+};
  
 export default Banner;
